@@ -11,7 +11,7 @@ interface TubeFareService {
     fun calculateFare(eventLog: List<Event>, endLocation: Station): BigDecimal
 
     companion object {
-        val MAXIMUM_FARE: BigDecimal = BigDecimal.valueOf(3.20)
+        val MAXIMUM_FARE: BigDecimal = BigDecimal.valueOf(3.2)
     }
 }
 

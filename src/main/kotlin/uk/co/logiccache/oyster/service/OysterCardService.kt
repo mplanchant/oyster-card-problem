@@ -14,7 +14,7 @@ interface OysterCardService {
     fun credit(customer: Customer, amount: BigDecimal)
 
     companion object {
-        val BUS_FARE: BigDecimal = BigDecimal.valueOf(1.80)
+        val BUS_FARE: BigDecimal = BigDecimal.valueOf(1.8)
     }
 }
 
