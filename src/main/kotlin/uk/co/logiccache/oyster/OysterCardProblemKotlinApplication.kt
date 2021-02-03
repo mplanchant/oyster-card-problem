@@ -14,7 +14,8 @@ import java.math.RoundingMode
 private val logger = KotlinLogging.logger {}
 
 @SpringBootApplication
-class OysterCardProblemKotlinApplication @Autowired constructor(private val oysterCardService: OysterCardService) : CommandLineRunner {
+class OysterCardProblemKotlinApplication @Autowired constructor(private val oysterCardService: OysterCardService) :
+    CommandLineRunner {
 
     override fun run(vararg args: String?) {
         val bob = Customer("Bob")

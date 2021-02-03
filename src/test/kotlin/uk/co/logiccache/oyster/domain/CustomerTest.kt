@@ -9,6 +9,6 @@ internal class CustomerTest {
     @Test
     internal fun new_customer_has_zero_balance() {
         assertThat(Customer("Harry").balance)
-                .isEqualTo(BigDecimal.ZERO)
+            .isEqualTo(BigDecimal.ZERO)
     }
 }

@@ -13,8 +13,9 @@ import uk.co.logiccache.oyster.service.TubeFareService
 @SpringBootTest
 @ExtendWith(OutputCaptureExtension::class)
 class OysterCardProblemKotlinApplicationTests @Autowired constructor(
-        private val tubeFareService: TubeFareService,
-        private val oysterCardService: OysterCardService) {
+    private val tubeFareService: TubeFareService,
+    private val oysterCardService: OysterCardService
+) {
 
     @Test
     fun context_loads() {
@@ -26,6 +27,6 @@ class OysterCardProblemKotlinApplicationTests @Autowired constructor(
     fun test_main(output: CapturedOutput) {
         main(arrayOf())
         assertThat(output)
-                .contains("Started OysterCardProblemKotlinApplicationTests")
+            .contains("Started OysterCardProblemKotlinApplicationTests")
     }
 }
